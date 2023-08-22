@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Make the image responsive */
+.sliderimg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Center the image carousel */
+.image-slide {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Position the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 415%; /* Center vertically */
+  left: 30%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: #030201;
+  padding: 7px;
+  border-radius: 2px;
+  text-align: justify;
+  margin: 0;
+  width: 80%; /* Adjust the width as needed for responsiveness */
+  max-width: 400px; /* Maximum width for larger screens */
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 85%;
+}
+
+.Serafini {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .text-overlay {
+    width: 90%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* Media Query for even smaller screens */
+@media (max-width: 576px) {
+  .text-overlay {
+    width: 100%; /* Adjust the width for very small screens */
+    margin: 0 80px; /* Add some margin for better readability */
+  }
+}
