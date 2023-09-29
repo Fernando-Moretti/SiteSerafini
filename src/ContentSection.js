@@ -1,21 +1,21 @@
 import React from "react";
 import './index.css';
+import './App.css';
+import BackVideo from './images/BackVideo.mp4';
 
 const ContentSection = () => {
     return (
         <div className="main-content">
-           <hr className="my-4 border-t-2 border-gray-400" />
-        <div className="h-screen flex items-center justify-center">
-            <section className="content-section">
-                <h2>SERAFINI "READY TO WEAR"</h2>
-            </section>
-          </div>
-        <div className="dress-content">
-            <hr className="my-4 border-t-2 border-gray-400" />
-        <div className="h-screen flex items-center justify-center">
-            
-          </div>
-        </div>
+            <div className="h-screen flex items-center justify-center">
+                <div className="text">
+                    <p>SERAFINI "READY-TO-WEAR"</p>
+                </div>
+                <div className="video">
+                    <video className='VideoTag' autoPlay loop muted>
+                        <source src={BackVideo} type='video/mp4' />
+                    </video>
+                </div>
+            </div>
         </div>
     );
 };
